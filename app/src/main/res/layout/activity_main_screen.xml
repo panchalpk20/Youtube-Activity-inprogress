@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainScreen">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/menu_bg"
+        android:scaleType="center"
+        android:contentDescription=" "
+        tools:ignore="HardcodedText" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="#80444444"
+        android:paddingBottom="0dp"
+        >
+
+        <TextView
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="App Title"
+            android:textAllCaps="true"
+            android:fontFamily="sans-serif"
+            android:textAlignment="center"
+            android:textSize="35sp"
+            android:paddingLeft="10dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="0dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"
+            />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager_slider"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#333"
+            android:layout_marginTop="10dp"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_marginTop="0dp"
+                >
+
+                <Button
+                    android:id="@+id/helping_hand"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:text="helping_hand"
+                    android:background="@drawable/menu_button"
+                    android:textColor="#fff"
+                    android:textSize="25sp"
+                    android:layout_marginBottom="5dp"
+                    android:drawableLeft="@drawable/menu_icon"
+
+                    />
+                <Button
+                    android:id="@+id/courses"
+                    android:text="Do_Courses"
+                    android:textSize="25sp"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/menu_button"
+                    android:textColor="#fff"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="5dp"
+                    android:drawableLeft="@drawable/menu_icon"
+                    />
+
+                <Button
+                    android:id="@+id/insta"
+                    android:text="Instagram"
+                    android:textSize="25sp"
+                    android:background="@drawable/menu_button"
+                    android:textColor="#fff"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="5dp"
+                    android:drawableLeft="@drawable/menu_icon"
+                    />
+                <Button
+                    android:id="@+id/youtube"
+                    android:text="Youtube"
+                    android:textSize="25sp"
+                    android:background="@drawable/menu_button"
+                    android:textColor="#fff"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:drawableLeft="@drawable/menu_icon"
+                    />
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
